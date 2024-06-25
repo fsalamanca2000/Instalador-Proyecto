@@ -1,0 +1,88 @@
+/* Estilos del contenedor del header */
+.header-container {
+    display: flex;
+    align-items: center;
+    background-color: #FFA500; /* Color de fondo amarillo */
+    padding: 10px 20px;
+  }
+.advertising-container{
+    
+}
+  /* Estilos del logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  
+  .logo {
+    height: 40px; /* Ajusta el tamaño del logo */
+    margin-right: 10px;
+  }
+  
+  /* Estilos del campo de búsqueda */
+  .search-input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 300px; /* Puedes ajustar el ancho según necesites */
+    margin: 0 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Ajusta el padding según la necesidad */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .search-button {
+    position: absolute;
+    right: 10px; /* Ajusta según la necesidad */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-icon {
+    width: 20px; /* Ajusta el tamaño de la imagen */
+    height: 20px; /* Ajusta el tamaño de la imagen */
+  }
+  
+  /* Estilos del menú de navegación */
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #000;
+    background-color: #000; /* Color de fondo negro */
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-item a:hover {
+    background-color: #555;
+  }
+  
+  .cart-icon {
+    width: 20px; /* Ajusta el tamaño del icono del carrito */
+    height: 20px; /* Ajusta el tamaño del icono del carrito */
+  }
+  
