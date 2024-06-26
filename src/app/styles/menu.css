@@ -1,88 +1,135 @@
 /* Estilos del contenedor del header */
 .header-container {
-    display: flex;
-    align-items: center;
-    background-color: #FFA500; /* Color de fondo amarillo */
-    padding: 10px 20px;
-  }
-.advertising-container{
-    
+  background-color: #FEBD17; /* Color de fondo amarillo */
+  height: 147px; /* Altura fija del header */
+  box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del alto total */
+  position: relative; /* Para colocar el contenedor de publicidad */
 }
-  /* Estilos del logo */
-  .logo-container {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-  }
-  
-  .logo {
-    height: 40px; /* Ajusta el tamaño del logo */
-    margin-right: 10px;
-  }
-  
-  /* Estilos del campo de búsqueda */
-  .search-input-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 300px; /* Puedes ajustar el ancho según necesites */
-    margin: 0 20px;
-  }
-  
-  .search-input {
-    width: 100%;
-    padding: 10px 40px 10px 10px; /* Ajusta el padding según la necesidad */
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  .search-button {
-    position: absolute;
-    right: 10px; /* Ajusta según la necesidad */
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .search-icon {
-    width: 20px; /* Ajusta el tamaño de la imagen */
-    height: 20px; /* Ajusta el tamaño de la imagen */
-  }
-  
-  /* Estilos del menú de navegación */
-  .nav-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .nav-item {
-    margin-right: 20px;
-  }
-  
-  .nav-item a {
-    text-decoration: none;
-    color: #000;
-    background-color: #000; /* Color de fondo negro */
-    padding: 10px 15px;
-    border-radius: 20px;
-    color: #fff;
-    transition: background-color 0.3s;
-  }
-  
-  .nav-item a:hover {
-    background-color: #555;
-  }
-  
-  .cart-icon {
-    width: 20px; /* Ajusta el tamaño del icono del carrito */
-    height: 20px; /* Ajusta el tamaño del icono del carrito */
-  }
-  
+
+/* Estilos del contenedor de publicidad */
+.advertising-container {
+  background-color: #1E1E1E;
+  color: #F5F5F5;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Asegura que el contenedor de publicidad esté por encima de otros elementos */
+}
+
+/* Ajustes para el contenido principal del header */
+.main-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 40px; /* Espacio para el contenedor de publicidad */
+  z-index: 0; /* Asegura que el contenido principal esté detrás del contenedor de publicidad */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Genera sombra en el borde inferior */
+}
+
+/* Estilos del logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+.logo {
+  width: 250px; /* Ajusta el tamaño horizontal del logo */
+  height: 74px; /* Ajusta el tamaño vertical del logo */
+}
+
+/* Estilos del campo de búsqueda */
+.search-input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 368px; /* Reduce el ancho del campo de búsqueda */
+  height: 37px;
+  margin-right: 200px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Ajusta el padding según la necesidad */
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.search-button {
+  position: absolute;
+  right: 10px; /* Ajusta según la necesidad */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 27px; /* Ajusta el tamaño de la imagen */
+  height: 27px; /* Ajusta el tamaño de la imagen */
+}
+
+/* Estilos del menú de navegación */
+.nav-container {
+  display: flex;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px; /* Espacio entre los elementos de la lista */
+}
+
+.nav-item {
+  width: 135px;
+  height: 33px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.nav-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1E1E1E; /* Color de fondo negro */
+  padding: 5px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.nav-item a:hover {
+  background-color: #737373;
+}
+
+.cart-icon {
+  width: 40px; /* Ajusta el tamaño del icono del carrito */
+  height: 40px; /* Ajusta el tamaño del icono del carrito */
+}
+
+.carrito-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.carrito-number {
+  position: absolute;
+  top: 10px;
+  right: -15px;
+  color: #1E1E1E;
+  padding: 2px 5px;
+  font-size: 16px;
+}
